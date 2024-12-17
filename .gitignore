@@ -178,3 +178,6 @@ cython_debug/
 *.pkl
 *.pth
 *.pt
+
+# Mac OS
+.DS_Store
