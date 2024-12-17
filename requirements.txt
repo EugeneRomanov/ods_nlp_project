@@ -1,0 +1,10 @@
+torch
+torchvision
+transformers
+numpy
+pandas
+matplotlib
+scikit-learn
+catboost
+wordcloud
+nltk
