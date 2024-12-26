@@ -24,6 +24,30 @@ This repository presents a comprehensive documentation of our research methodolo
 
 ## Results summary
 
+| Experiment | R² score | MAE |
+|------------|----------|-----|
+| Baselines | | |
+| By average | 0.000 ± 0.000 | 0.513 ± 0.002 |
+| Bi-GRU-CNN | 0.652 ± 0.012 | 0.288 ± 0.007 |
+| CatBoost | 0.734 ± 0.005 | 0.248 ± 0.004 |
+| rubert-tiny-turbo (29M) | 0.645 ± 0.027 | 0.289 ± 0.012 |
+| Modifications | | |
+| Double rubert-tiny-turbo | 0.643 ± 0.024 | 0.291 ± 0.013 |
+| + Huber loss + TSDAE | 0.657 ± 0.056 | 0.285 ± 0.024 |
+| --- | | |
+| rubert-tiny-turbo + Huber loss | 0.655 ± 0.035 | 0.286 ± 0.016 |
+| + extra [MASK] pooling | 0.599 ± 0.034 | 0.313 ± 0.015 |
+| *+ cross-attention* | *0.671 ± 0.027* | *0.279 ± 0.014* |
+| --- | | |
+| multilingual-e5-small (118M) + Huber loss | 0.723 ± 0.024 | 0.254 ± 0.013 |
+| *+ cross-attention* | *0.729 ± 0.017* | *0.251 ± 0.009* |
+| **+ CatBoost** | **0.770 ± 0.001** | **0.229 ± 0.003** |
+| + cross-attention + CatBoost | 0.769 ± 0.014 | 0.229 ± 0.01 |
+
+
+Performance of the models tested in the study. Metrics are reported as a mean value ± 95% confidence intervals across three random seeds. Overall state-of-the-art results are in **bold**, while the best results for a solo transformer model are in *italics*.
+
+
 ![image](https://github.com/user-attachments/assets/412647b1-9e25-42da-8400-82d4bd64e91b)
 
 
