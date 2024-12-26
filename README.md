@@ -1,6 +1,6 @@
 # Salary prediction based on job description in the IT sector
 
-This repository contains the implementation of various machine learning approaches for predicting salaries in IT job postings based on job descriptions and related metadata for ODS Natural Language Processing course (stream 7, autumn 2024)
+This repository contains the implementation of various machine learning approaches for predicting salaries in IT job postings based on job descriptions and related metadata for ODS Natural Language Processing course (stream 7, autumn 2024).  
 
 
 
@@ -20,7 +20,7 @@ By a systematic investigation of state-of-the-art machine learning architectures
 └── predictions_summary/    # Analysis and comparison of model predictions
 ```
 
-## Results summary
+## Results Summary
 
 
 | Experiment | R² score | MAE |
@@ -47,8 +47,20 @@ By a systematic investigation of state-of-the-art machine learning architectures
 
 Performance of the models tested in the study. Metrics are reported as a mean value ± 95% confidence intervals across three random seeds. Overall state-of-the-art results are in **bold**, while the best results for a solo transformer model are in *italics*.
 
+## Getting Started
 
+You would need Python `3.10+`.
 
+First, clone the repo:
+```bash
+git clone git@github.com:EugeneRomanov/ods_nlp_project.git
+```
+
+Next, get the dependencies:
+
+```bash
+pip install -r requirements.txt
+```
 
 ## Participants 
 - Eugene Romanov - tg @wallrich
