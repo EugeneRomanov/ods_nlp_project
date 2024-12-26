@@ -16,7 +16,6 @@ This repository presents a comprehensive documentation of our research methodolo
 ## Project Structure
 
 ```
-.
 ├── baselines/          # Implementation of baseline models
 ├── data-collection/    # Scripts and tools for data collection
 ├── experiments/        # Experimental notebooks and scripts
