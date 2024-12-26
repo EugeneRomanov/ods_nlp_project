@@ -34,7 +34,7 @@ This repository presents a comprehensive documentation of our research methodolo
 | Modifications | | |
 | Double rubert-tiny-turbo | 0.643 ± 0.024 | 0.291 ± 0.013 |
 | + Huber loss + TSDAE | 0.657 ± 0.056 | 0.285 ± 0.024 |
-| --- | | |
+|------------|------------|------------|
 | rubert-tiny-turbo + Huber loss | 0.655 ± 0.035 | 0.286 ± 0.016 |
 | + extra [MASK] pooling | 0.599 ± 0.034 | 0.313 ± 0.015 |
 | *+ cross-attention* | *0.671 ± 0.027* | *0.279 ± 0.014* |
