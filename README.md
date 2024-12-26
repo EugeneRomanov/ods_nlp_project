@@ -29,7 +29,6 @@ This repository presents a comprehensive documentation of our research methodolo
 
 
 ## Participants 
-​​
 - Eugene Romanov - tg @wallrich
 - Dmitrii Shiriaev - tg @dimashiv
 - George Besedin - tg @besedin_george
