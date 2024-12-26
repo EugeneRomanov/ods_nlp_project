@@ -1,0 +1,13 @@
+torch==2.4.1
+torchvision==0.19.1
+torchaudio==2.4.1
+sentence-transformers==3.3.1
+transformers==4.44.2
+numpy==1.26.4
+pandas==2.1.4
+matplotlib==3.7.1
+scikit-learn==1.2.2
+catboost==1.2.7
+wordcloud==1.9.3
+nltk==3.2.4
+ipykernel==6.29.5
