@@ -8,7 +8,9 @@ This repository contains the implementation of various machine learning approach
 
 Setting up an optimal salary level in the IT sector presents a significant challenge in a labor market analysis. Here, we address this challenge through the development of an advanced machine learning methodology for salary prediction, achieving a state-of-the-art performance with the R² score of 0.770.
 
-By a systematic investigation of state-of-the-art machine learning architectures, we explored various solutions ranging from gradient boosting frameworks to neural network implementations. The highest prediction quality was observed with a custom setup - integration of CatBoost predictions with a an output from a transformer-based regressor enhanced through the training with Huber loss and having a cross-attention block between represenations of different textual features, resulting in a model capable of sophisticated feature extraction from job descriptions and market indicators. We believe that the source code and the report from this work can be helpful for both academic research in machine learning and practical applications in human resource analytics.
+By a systematic investigation of state-of-the-art machine learning architectures, we explored various solutions ranging from gradient boosting frameworks to neural network implementations. The highest prediction quality was observed with a custom setup - integration of CatBoost predictions with a an output from a transformer-based regressor enhanced through the training with Huber loss, resulting in a model capable of sophisticated feature extraction from job descriptions and market indicators.
+
+We believe that the source code and the report from this work can be helpful for both academic research in machine learning and practical applications in human resource analytics.
 
 
 ## Project Structure
@@ -21,6 +23,8 @@ By a systematic investigation of state-of-the-art machine learning architectures
 ```
 
 ## Results Summary
+
+Metrics are reported as a mean value ± 95% confidence intervals across three random seeds. Overall state-of-the-art results are in **bold**, while the best results for a solo transformer model are in *italics*.
 
 
 | Experiment | R² score | MAE |
@@ -45,22 +49,27 @@ By a systematic investigation of state-of-the-art machine learning architectures
 | + cross-attention + CatBoost | 0.769 ± 0.014 | 0.229 ± 0.01 |
 
 
-Performance of the models tested in the study. Metrics are reported as a mean value ± 95% confidence intervals across three random seeds. Overall state-of-the-art results are in **bold**, while the best results for a solo transformer model are in *italics*.
-
 ## Getting Started
 
 You would need Python `3.10+`.
 
-First, clone the repo:
+1. Сlone the repo:
 ```bash
 git clone git@github.com:EugeneRomanov/ods_nlp_project.git
 ```
 
-Next, get the dependencies:
+2. Setup the dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
+3. Download data
+```bash
+mkdir data
+wget --no-check-certificate 'https://drive.usercontent.google.com/download?id=1iqg1FIPfbrZWlung6gZqve1MeQWc0Je4&export=download&authuser=1&confirm=t' -O './data/dataset.csv'
+```
+
+
 
 ## Participants 
 - Eugene Romanov - tg @wallrich
